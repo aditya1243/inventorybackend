@@ -15,7 +15,8 @@ app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/inventory', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://niranjanraykar:Niranjan2021@cluster0.gxve0sq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(error => console.log(error));
 
